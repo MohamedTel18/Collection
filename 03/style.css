@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.card{
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 320px;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+h5{
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+
+p{
+    color:white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+h2{
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-weight: 600; /* Variable font allows any weight */
+}
+
+button{
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 12px;
+    border-radius: 5px;
+    width: 80%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* You can use any weight from 100-900 */
+}
+
+button:last-child{
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    transform: translateY(-2px);
+}
