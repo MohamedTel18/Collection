@@ -1,0 +1,167 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(30, 54%, 90%);
+    color:hsl(24, 5%, 18%);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.recipe{
+    width: 750px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding:30px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+.preparation{
+    background-color: hsl(330, 100%, 98%);
+    padding: 15px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.preparation ul li{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    height: 35px;
+
+}
+
+li h5{
+    margin-top: 23px;
+}
+
+.preparation h2{
+    color:hsl(332, 51%, 32%);
+}
+
+.ingredients{
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+
+.ingredients h2{
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 20px;
+}
+
+.ingredients ul li{
+    margin-bottom: 10px;
+}
+
+
+.ingredients ul li:last-child{
+    margin-bottom: 30px;
+}
+
+.Instructions{
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+    margin-bottom: 25px;
+}
+
+.Instructions h2{
+    color: hsl(14, 45%, 36%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Instructions ol li{
+    margin-bottom: 15px;
+    position: relative;
+    line-height: 1.6;
+    padding-left: 30px;
+}
+
+
+
+.Instructions ol li strong {
+    color: hsl(24, 5%, 18%);
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.Instructions ol li:last-child {
+    margin-bottom: 25px;
+}
+
+/* Nutritional Information Styling */
+.nutritional {
+    margin-top: 25px;
+}
+
+.nutritional h2 {
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 20px;
+}
+
+.nutritional table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutritional table tr {
+    border-bottom: 1px solid hsl(0, 0%, 85%);
+}
+
+.nutritional table tr:last-child {
+    border-bottom: none;
+}
+
+.nutritional table th,
+.nutritional table td {
+    padding: 12px 0;
+    text-align: left;
+}
+
+.nutritional table th {
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.nutritional table td {
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+@media (max-width: 375px) {
+    .recipe {
+        width: 100%;
+        margin: 0;
+    }
+
+    .recipe img {
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .preparation h2,
+    .ingredients h2,
+    .Instructions h2 {
+        font-size: 1.25rem;
+    }
+}
