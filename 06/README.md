@@ -1,91 +1,108 @@
-# Frontend Mentor - Four card feature section
+# Four Card Feature Section
 
-![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
+A modern and responsive feature section showcasing AI-powered tools and services, built as part of Frontend Mentor challenges.
 
-## Welcome! 👋
+## 🔗 Live Demo
 
-Thanks for checking out this front-end coding challenge.
+**[View Live Project](https://collection6.onrender.com/)**
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## 📋 About
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+This project is a feature section component highlighting four key services: Supervisor, Team Builder, Karma, and Calculator. The design uses a unique asymmetrical grid layout where cards are strategically positioned to create visual balance and hierarchy. Each service is represented with distinctive color coding and icons.
 
-## The challenge
+## 🛠️ Technologies Used
 
-Your challenge is to build out this feature section and get it looking as close to the design as possible.
+- **HTML5** - Semantic markup with proper section structure
+- **CSS3** - Advanced Grid layout and responsive design
+- **Google Fonts** - Poppins font family (weights 200, 400, 600)
+- **Frontend Mentor** - Design challenge and specifications
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+## ✨ Features
 
-Your users should:
+- 📱 Fully responsive design with adaptive grid layouts
+- 🎨 Asymmetrical grid positioning for visual interest
+- 🌈 Color-coded service cards with distinct branding
+- 🎯 Clean typography hierarchy with multiple font weights
+- 📐 Strategic card positioning (left-center-right layout)
+- 🖼️ Custom icons for each service category
+- 💫 Subtle shadows and modern card styling
+- 🚀 Optimized performance and cross-browser compatibility
 
-- View the optimal layout for the site depending on their device's screen size
+## 🎨 Design Specifications
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+- **Layout**: Asymmetrical 3-column grid with strategic card placement
+- **Colors**: 
+  - Supervisor: Cyan `hsl(180, 62%, 55%)`
+  - Team Builder: Red `hsl(0, 78%, 62%)`
+  - Karma: Orange `hsl(34, 97%, 64%)`
+  - Calculator: Blue `hsl(212, 86%, 64%)`
+- **Typography**: Poppins with light, regular, and semi-bold weights
+- **Cards**: White background with colored top borders and soft shadows
 
-## Where to find everything
+## 🏢 Service Features
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+- **Supervisor**: Monitors activity to identify project roadblocks
+- **Team Builder**: Scans talent network to create optimal teams
+- **Karma**: Regularly evaluates talent to ensure quality
+- **Calculator**: Uses past project data for better delivery estimates
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## 🚀 Quick Start
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+1. Clone the repository
+2. Navigate to the `06/` directory
+3. Open `index.html` in your browser
+4. That's it! No build process required.
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+## 📁 Project Structure
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+```
+06/
+├── images/
+│   ├── icon-supervisor.svg         # Supervisor service icon
+│   ├── icon-team-builder.svg       # Team Builder service icon
+│   ├── icon-karma.svg              # Karma service icon
+│   ├── icon-calculator.svg         # Calculator service icon
+│   └── favicon-32x32.png           # Favicon
+├── design/                         # Design reference files
+├── index.html                      # Main HTML file
+├── style.css                       # Stylesheet with grid layout
+└── README.md                       # Project documentation
+```
 
-## Building your project
+## 🎯 Challenge Focus
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+This project was built as part of the Frontend Mentor Four Card Feature Section challenge, focusing on:
+- Advanced CSS Grid layouts with asymmetrical positioning
+- Responsive design patterns for complex grid structures
+- Color psychology in service differentiation
+- Typography hierarchy for information architecture
+- Card component design and spacing
+- Modern web design principles
+- Cross-device compatibility and optimization
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+## 💡 Key Learning Points
 
-## Deploying your project
+- **CSS Grid Mastery**: Complex grid positioning with span and alignment
+- **Asymmetrical Design**: Creating visual balance with uneven layouts
+- **Color Strategy**: Using color to differentiate and categorize services
+- **Responsive Grids**: Adapting complex layouts across device sizes
+- **Information Architecture**: Organizing content for optimal user comprehension
+- **Modern Card Design**: Contemporary styling with subtle shadows and borders
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+## 🔧 Technical Highlights
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- **Grid Layout**: 3-column desktop grid with strategic card spanning
+- **Responsive Strategy**: Adaptive layouts (3-col → 2-col → 1-col)
+- **Font Implementation**: Poppins variable weights for hierarchy
+- **Card System**: Reusable card components with color theming
+- **Performance**: Optimized CSS with efficient selectors
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+## 📱 Responsive Behavior
 
-## Create a custom `README.md`
+- **Desktop (1200px+)**: Asymmetrical 3-column layout
+- **Tablet (1024px)**: 2-column with adjusted positioning
+- **Mobile (768px)**: Single column stack for optimal mobile UX
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+---
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+Built with ❤️ as part of Frontend Mentor challenges
