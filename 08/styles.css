@@ -1,0 +1,288 @@
+/* Import Manrope font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    border-radius: 10px;
+    box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
+    max-width: 700px;
+    max-height: 400px;
+}
+
+.content{
+    grid-column: 2 / 4;
+    padding: 16px;
+}
+
+.img{
+    grid-column: 1 / 2;
+    height: 100%;
+}
+
+.drawer-image{
+    max-width: 100%;
+    height: 100%;
+}
+
+.author-img {
+    border-radius: 50%;
+    max-width: 48px;
+    height: 48px;
+}
+
+.share-popup{
+    position: absolute;
+    top: -70px;
+    right: -68px;
+    background-color: hsl(217, 19%, 35%);
+    padding: 18px 36px;
+    border-radius: 10px;
+    display: none;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 10px 10px rgba(201, 213, 225, 0.4);
+    z-index: 1;
+}
+
+.share-popup::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid hsl(217, 19%, 35%);
+}
+
+.share-popup.active {
+    display: flex;
+}
+
+.share-text {
+    color: hsl(212, 23%, 69%);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-2px);
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+.author-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.content h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    line-height: 1.4;
+    margin-bottom: 22px;
+}
+
+.content p {
+    color: hsl(214, 17%, 51%);
+    line-height: 1.5;
+}
+
+.author h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    font-size: 0.875rem;
+}
+
+.author p {
+    color: hsl(212, 23%, 69%);
+    font-size: 0.8rem;
+}
+
+.share-btn{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 40px;
+}
+
+.share-btn img {
+    filter: brightness(0) invert(1);
+}
+
+.share-btn:hover{
+    transform: translateY(-2px);
+    background-color: hsl(214, 17%, 51%);
+}
+
+/* Tablet and Mobile Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        padding-top: 2rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        max-width: 400px;
+        max-height: none;
+        width: 100%;
+    }
+
+    .img {
+        grid-column: 1;
+        grid-row: 1;
+        height: 200px;
+    }
+
+    .drawer-image {
+        border-radius: 10px 10px 0 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .drawer-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .content {
+        grid-column: 1;
+        grid-row: 2;
+        padding: 2rem 2rem 1rem;
+    }
+
+    .content h2 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .content p {
+        margin-bottom: 2rem;
+    }
+
+    .author-section {
+        margin-top: 1rem;
+    }
+
+    .share-btn {
+        margin-right: 0;
+    }
+
+    /* Mobile Share Popup - Bottom Overlay */
+    .share-popup {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 0 0 10px 10px;
+        padding: 1.5rem 2rem;
+        justify-content: flex-start;
+        z-index: 20;
+    }
+
+    .share-popup::after {
+        display: none;
+    }
+
+    .share-popup .share-btn {
+        background-color: hsl(214, 17%, 51%);
+        margin-left: auto;
+    }
+
+    .share-popup.active {
+        display: flex;
+    }
+
+    /* Hide author info when share is active */
+    .author-section.share-active .author {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .author-section.share-active .share-btn {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        padding: 0.75rem;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    .content {
+        padding: 1.5rem 1.5rem 1rem;
+    }
+
+    .content h2 {
+        font-size: 0.95rem;
+    }
+
+    .share-popup {
+        padding: 1.25rem 1.5rem;
+    }
+}
