@@ -1,0 +1,286 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.purple-card{
+    background-color: hsl(263, 55%, 52%);
+    color:hsl(0, 0%, 100%);
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.gray-card{
+    background-color: hsl(217, 19%, 35%);
+    color:hsl(0, 0%, 100%);
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+.big-card{
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(217, 19%, 35%);
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.small-card{
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(217, 19%, 35%);
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.black-card{
+    background-color: hsl(219, 29%, 14%);
+    color:hsl(0, 0%, 100%);
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.quote-pattern{
+    position: absolute;
+    top: 0;
+    left: 70%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.card-header {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile-image {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.card-body h2{
+    position: relative;
+    z-index: 2;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+
+.profile-info h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.125rem;
+}
+
+.profile-info p {
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+
+.card:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+/* Tablet Landscape - Large Tablets */
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+        max-width: 900px;
+    }
+
+    .purple-card {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    .gray-card {
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+
+    .big-card {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    .small-card {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+
+    .black-card {
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+
+    .quote-pattern {
+        left: 60%;
+    }
+}
+
+/* Tablet Portrait - Medium Tablets */
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 1.25rem;
+        max-width: 600px;
+    }
+
+    .purple-card {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    .gray-card {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    .big-card {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+    .small-card {
+        grid-column: 1/2;
+        grid-row: 3;
+    }
+
+    .black-card {
+        grid-column: 1/3;
+        grid-row: 4;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .quote-pattern {
+        left: 50%;
+    }
+}
+
+/* Mobile Landscape - Large Phones */
+@media (max-width: 640px) {
+    body {
+        padding: 1rem;
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        gap: 1rem;
+        max-width: 100%;
+    }
+
+    .purple-card,
+    .gray-card,
+    .big-card,
+    .small-card,
+    .black-card {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .card {
+        padding: 1.25rem;
+    }
+
+    .quote-pattern {
+        display: none;
+    }
+
+    .card-header {
+        gap: 0.75rem;
+    }
+
+    .profile-image {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Mobile Portrait - Small Phones */
+@media (max-width: 480px) {
+    body {
+        padding: 0.75rem;
+    }
+
+    main {
+        gap: 0.75rem;
+    }
+
+    .card {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+
+    .card-header {
+        gap: 0.5rem;
+    }
+
+    .profile-image {
+        width: 28px;
+        height: 28px;
+    }
+
+    .card-body h2 {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
