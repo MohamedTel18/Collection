@@ -1,94 +1,88 @@
-# Frontend Mentor - Article preview component
+# Frontend Mentor - Article Preview Component
 
 ![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## 🌐 Live Demo
 
-Thanks for checking out this front-end coding challenge.
+**[View Live Site](https://collection8.onrender.com/)**
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## � Overview
 
-**To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
+This is my solution to the [Article Preview Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). This project features an interactive article card with a sophisticated share functionality that adapts beautifully across different screen sizes.
 
-## The challenge
+## ✨ Features
 
-Your challenge is to build out this article preview component and get it looking as close to the design as possible.
+- **Responsive Design**: Seamless layouts for desktop, tablet, and mobile devices
+- **Interactive Share Popup**: Click the share button to reveal social media options
+- **CSS Triangle**: Custom CSS triangle pointer for desktop tooltip
+- **Mobile Overlay**: Full-width bottom overlay for mobile share experience
+- **Smooth Animations**: Hover effects and transitions throughout
+- **Accessibility**: Proper ARIA labels and semantic HTML structure
+- **Modern Typography**: Manrope font implementation with proper hierarchy
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+## 🎯 The Challenge
 
-The only JavaScript you'll need for this challenge is to initiate the share options when someone clicks the share icon.
-
-Your users should be able to: 
+Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
 - See the social media share links when they click the share icon
+- Experience different share popup behaviors on desktop vs mobile
+- Enjoy smooth hover effects and transitions
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+## 🛠️ Built With
 
-## Where to find everything
+- **HTML5**: Semantic markup with accessibility features
+- **CSS3**: Modern styling with Grid, Flexbox, and custom properties
+- **JavaScript**: Interactive functionality with DOM manipulation
+- **Google Fonts**: Manrope typography (weights 500, 700)
+- **CSS Grid**: Responsive layout system
+- **CSS Triangles**: Custom triangle pointer using border technique
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+## 📱 Responsive Behavior
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### Desktop (768px+):
+- Horizontal card layout with image sidebar
+- Share popup appears above button with triangle pointer
+- Hover effects on buttons and social links
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### Mobile (768px and below):
+- Vertical card layout (image top, content bottom)
+- Share popup becomes bottom overlay covering author section
+- Author information hidden when share is active
+- Touch-friendly interactions
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+## 🎨 Design Features
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- **Card Layout**: Elegant horizontal/vertical adaptive design
+- **Typography**: Manrope font with proper hierarchy (13px base, responsive sizing)
+- **Color Palette**: Professional blue-gray scheme from style guide
+- **Interactive Elements**: Share button with white icon filter
+- **CSS Triangle**: Custom triangle using border trick for desktop tooltip
+- **Smooth Transitions**: Hover effects and popup animations
+- **Box Shadows**: Realistic depth with subtle shadows
 
-## Building your project
+## ⚡ JavaScript Functionality
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- **Toggle Share Popup**: `classList.toggle()` for show/hide functionality
+- **Responsive Behavior**: Different popup styles for mobile vs desktop
+- **Click Outside**: Closes popup when clicking outside elements
+- **Window Resize**: Handles layout changes on screen resize
+- **Event Handling**: Modern addEventListener for interactions
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+## 🚀 Deployment
 
-## Deploying your project
+This project is deployed on [Render](https://render.com/) for fast and reliable hosting.
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+**Live URL**: [https://collection8.onrender.com/](https://collection8.onrender.com/)
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+## 💡 What I Learned
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+- Advanced CSS triangle creation using border techniques
+- Responsive popup positioning strategies
+- Mobile-first interactive design patterns
+- JavaScript DOM manipulation and event handling
+- CSS Grid responsive layouts
+- Modern CSS filter properties for icon styling
 
-## Create a custom `README.md`
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+Built with ❤️ as part of Frontend Mentor challenges
