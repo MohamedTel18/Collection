@@ -1,0 +1,294 @@
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(234, 29%, 20%);
+}
+
+/* Typography styles based on style guide */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(234, 29%, 20%);
+    line-height: 1.5;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: hsl(234, 29%, 20%);
+    text-align: left;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+    max-height: 550px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.content{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    padding-right: 8px;
+}
+
+.image img{
+    max-width: 100%;
+    max-height: 530px;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.success-message{
+    background-color: hsl(0, 0%, 99%);
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 35px;
+    max-width: 410px;
+    margin-top: 10px;
+    text-align: left;
+    align-items: center;
+    display: none;
+}
+
+.dismiss-button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.dismiss-button:hover{
+    background-color: hsl(4, 100%, 67%);
+    transition: background-color 1s ease;
+    transform: translateY(-2px);
+}
+
+ul{
+    margin-bottom: 25px;
+    text-align: left;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(234, 29%, 20%);
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+li::before {
+    content: '';
+    background-image: url('./assets/images/icon-list.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+label{
+    text-align: left;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(234, 29%, 20%);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid hsl(234, 29%, 20%);
+    margin-bottom: 15px;
+}
+
+.subscribe-button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.subscribe-button:hover{
+    background-color: hsl(4, 100%, 67%);
+}
+
+/* Mobile-only responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        background-color: hsl(0, 0%, 100%);
+        justify-content: flex-start;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        max-width: 100%;
+        max-height: none;
+        border-radius: 0;
+        min-height: 100vh;
+    }
+
+    .image {
+        order: -1;
+        grid-row: 1;
+        width: 100%;
+        height: 280px;
+        background: url('./assets/images/illustration-sign-up-mobile.svg');
+       /* background-size: contain;*/
+        background-position: center;
+        padding: 2rem 1rem 1rem;
+        border-radius: 0 0 1rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        display: none;
+    }
+
+    .content {
+        grid-row: 2;
+        text-align: left;
+        padding: 2.5rem 1.5rem;
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        line-height: 1;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+
+    ul {
+        margin-bottom: 2rem;
+    }
+
+    label {
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    input {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid hsl(0, 0%, 87%);
+    }
+
+    .subscribe-button {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-weight: 700;
+    }
+
+    /* Mobile Success Message */
+    .success-message {
+        max-width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        padding: 6rem 1.5rem 2rem;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .success-message h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        line-height: 1;
+    }
+
+    .success-message p {
+        margin-bottom: auto;
+        padding-bottom: 2rem;
+    }
+
+    .dismiss-button {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: auto;
+    }
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
