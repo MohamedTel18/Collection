@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Contact form</title>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <aside class="success-notification" id="success-notification">
+      <div class="head">
+        <img src="./assets/images/icon-success-check.svg" alt="icon icon-success-check">
+        <h2>Message Sent!</h2>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </aside>
+
+    <section class="form-container">
+      <header>
+        <h1>Contact Us</h1>
+      </header>
+      <form>
+        <div class="form-row">
+          <div class="element">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <output class="error-message" id="firstNameError">This field is required</output>
+          </div>
+
+          <div class="element ">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <output class="error-message" id="lastNameError">This field is required</output>
+          </div>
+        </div>
+        <div class="element full-width">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+          <output class="error-message" id="emailError">Please enter a valid email address</output>
+        </div>
+
+        <div class="element full-width">
+          <label for="query-type">Query Type</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="general-enquiry" name="query-type" value="general-enquiry" required>
+              <label for="general-enquiry">General Enquiry</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="support-request" name="query-type" value="support-request" required>
+              <label for="support-request">Support Request</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="element full-width">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <output class="error-message" id="messageError">This field is required</output>
+        </div>
+
+        <div class="checkbox-group">
+          <div class="checkbox-container">
+            <input type="checkbox" id="consent" name="consent" required>
+          </div>
+          <label for="consent" class="checkbox-label">
+           I hereby consent to being contacted by the team <span style="color: #e53e3e;">*</span>
+          </label>
+        </div>
+
+        <button type="submit" id="submit-button">Submit</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
