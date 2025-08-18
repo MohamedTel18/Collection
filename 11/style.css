@@ -40,6 +40,7 @@ header{
 .hamburger-menu{
     display: block;
     cursor: pointer;
+    z-index: 1001;
 }
 
 .hamburger-menu span{
@@ -49,6 +50,77 @@ header{
     background-color: white;
     margin: 5px 0;
     transition: 0.3s;
+}
+
+/* Mobile menu overlay */
+.mobile-menu-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 0%);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 1.5rem;
+}
+
+.mobile-menu-overlay.active{
+    display: flex;
+}
+
+.mobile-menu-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.mobile-menu-header img{
+    height: 24px;
+}
+
+.close-menu{
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+}
+
+.mobile-menu-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mobile-menu-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-menu-nav a:hover{
+    opacity: 0.7;
+}
+
+/* Hamburger animation when active */
+.hamburger-menu.active span:nth-child(1){
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3){
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 ul{

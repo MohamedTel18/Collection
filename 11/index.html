@@ -6,12 +6,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Loopstudios landing page</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <header>
     <nav class="header-nav">
       <img src="./images/logo.svg" alt="Loopstudios logo">
-      <div class="hamburger-menu">
+      <div class="hamburger-menu" id="hamburger-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -24,6 +25,21 @@
         <li><a href="#">Support</a></li>
       </ul>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <img src="./images/logo.svg" alt="Loopstudios logo">
+        <div class="close-menu" id="close-menu">✕</div>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="#">ABOUT</a>
+        <a href="#">CAREERS</a>
+        <a href="#">EVENTS</a>
+        <a href="#">PRODUCTS</a>
+        <a href="#">SUPPORT</a>
+      </nav>
+    </div>
 
     <div class="Hero">
       <div class="hero-text">
