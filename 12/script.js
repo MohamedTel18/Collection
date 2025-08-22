@@ -4,6 +4,7 @@ const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
 const images = document.querySelectorAll('.image-container img[alt="Product Image"]');
 const amountDisplay = document.querySelector('.amount');
+const container = document.querySelector('.image-container');
 const AddCart = document.querySelector('.add-to-cart');
 const cartCount = document.querySelector('.cart-count');
 const CartSummary = document.querySelector('.cart-summary');
@@ -86,3 +87,65 @@ function deleteCartItem(btn) {
     cartCount.classList.remove('show');
     cartCount.textContent = '0';
 }
+
+function changeImageGroup(index) {
+    container.style.display = 'block';
+    ShowImage(index);
+}
+
+// Lightbox functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const thumbnails = document.querySelectorAll('.thumbnail-section img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.querySelector('.lightbox-image');
+    const closeLightboxBtn = document.querySelector('.close-lightbox');
+    const lightboxNextBtn = document.querySelector('.lightbox-move.next');
+    const lightboxPrevBtn = document.querySelector('.lightbox-move.prev');
+
+    const galleryImageSources = [
+        './images/image-product-1.jpg',
+        './images/image-product-2.jpg',
+        './images/image-product-3.jpg',
+        './images/image-product-4.jpg'
+    ];
+    let currentLightboxIndex = 0;
+
+    function openLightbox(index) {
+        currentLightboxIndex = index;
+        lightboxImage.src = galleryImageSources[currentLightboxIndex];
+        lightbox.classList.add('show');
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('show');
+    }
+
+    function showNextImage() {
+        currentLightboxIndex = (currentLightboxIndex + 1) % galleryImageSources.length;
+        lightboxImage.src = galleryImageSources[currentLightboxIndex];
+    }
+
+    function showPrevImage() {
+        currentLightboxIndex = (currentLightboxIndex - 1 + galleryImageSources.length) % galleryImageSources.length;
+        lightboxImage.src = galleryImageSources[currentLightboxIndex];
+    }
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', () => {
+            openLightbox(parseInt(thumbnail.dataset.index));
+        });
+    });
+
+    if (closeLightboxBtn) closeLightboxBtn.addEventListener('click', closeLightbox);
+    if (lightboxNextBtn) lightboxNextBtn.addEventListener('click', showNextImage);
+    if (lightboxPrevBtn) lightboxPrevBtn.addEventListener('click', showPrevImage);
+
+    // Close lightbox when clicking on the overlay
+    if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+    }
+});

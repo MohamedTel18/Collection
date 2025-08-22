@@ -46,12 +46,22 @@
   <section class="image-desktop-show">
     <img src="./images/image-product-1.jpg" alt="Product Image">
     <div class="thumbnail-section">
-      <img src="./images/image-product-1-thumbnail.jpg" alt="Product Image Thumbnail">
-      <img src="./images/image-product-2-thumbnail.jpg" alt="Product Image Thumbnail">
-      <img src="./images/image-product-3-thumbnail.jpg" alt="Product Image Thumbnail">
-      <img src="./images/image-product-4-thumbnail.jpg" alt="Product Image Thumbnail">
+      <img src="./images/image-product-1-thumbnail.jpg" alt="Product Image Thumbnail" data-index="0">
+      <img src="./images/image-product-2-thumbnail.jpg" alt="Product Image Thumbnail" data-index="1">
+      <img src="./images/image-product-3-thumbnail.jpg" alt="Product Image Thumbnail" data-index="2">
+      <img src="./images/image-product-4-thumbnail.jpg" alt="Product Image Thumbnail" data-index="3">
     </div>
   </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="close-lightbox">&times;</button>
+      <button class="lightbox-move prev">&lt;</button>
+      <img src="" class="lightbox-image" alt="Lightbox Image">
+      <button class="lightbox-move next">&gt;</button>
+    </div>
+  </div>
 
   <nav class="sidebar" id="sidebar">
     <div class="sidebar-header">
@@ -83,14 +93,16 @@
         <p class="original-price">$250.00</p>
       </div>
     </div>
-    <div class="quantity">
-      <button class="decrease" onclick="decreaseQuantity()"><img src="./images/icon-minus.svg" alt=""></button>
-      <p class="amount">0</p>
-      <button class="increase" onclick="increaseQuantity()"><img src="./images/icon-plus.svg" alt=""></button>
+    <div class="Submit">
+      <div class="quantity">
+        <button class="decrease" onclick="decreaseQuantity()"><img src="./images/icon-minus.svg" alt=""></button>
+        <p class="amount">0</p>
+        <button class="increase" onclick="increaseQuantity()"><img src="./images/icon-plus.svg" alt=""></button>
+      </div>
+      <button class="add-to-cart" onclick="addToCart()">
+        <img src="./images/icon-cart.svg" alt="Cart" class="cart-icon">
+        Add to cart</button>
     </div>
-    <button class="add-to-cart" onclick="addToCart()">
-      <img src="./images/icon-cart.svg" alt="Cart" class="cart-icon">
-      Add to cart</button>
   </main>
 
 </body>
