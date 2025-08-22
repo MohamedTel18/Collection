@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="left-side">
+      <img src="./images/icon-menu.svg" alt="Icon Menu" class="menu" onclick="openSidebar()">
+      <img src="./images/logo.svg" alt="Sneaker Company Logo">
+      <nav class="Desktop-nav">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </nav>
+    </div>
+    <div class="right-side">
+      <img src="./images/icon-cart.svg" alt="Cart Icon" class="cart" onclick="toggleCart()">
+      <div class="cart-count">0</div>
+      <img src="./images/image-avatar.png" alt="User Avatar" class="avatar">
+    </div>
+  </header>
+  <section class="cart-summary">
+    <h2>Cart</h2>
+    <div class="cart-items">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+  </section>
+  <section class="image-container">
+    <button class="move next"><img src="./images/icon-next.svg" alt="Next"></button>
+    <img src="./images/image-product-1.jpg" alt="Product Image" class="active">
+    <img src="./images/image-product-2.jpg" alt="Product Image">
+    <img src="./images/image-product-3.jpg" alt="Product Image">
+    <img src="./images/image-product-4.jpg" alt="Product Image">
+    <button class="move prev"><img src="./images/icon-previous.svg" alt="Previous"></button>
+  </section>
+
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <button class="close-btn" onclick="closeSidebar()">✕</button>
+      <div class="logo">Menu</div>
+    </div>
+    <div class="sidebar-nav">
+      <a href="#" class="nav-item">Collections</a>
+      <a href="#" class="nav-item">Men</a>
+      <a href="#" class="nav-item">Women</a>
+      <a href="#" class="nav-item">About</a>
+      <a href="#" class="nav-item">Contact</a>
+    </div>
+  </nav>
+
+    <!-- Overlay -->
+  <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+  <main>
+    <h2>Sneaker Company</h2>
+    <h1>Fall Limited Edition Sneakers</h1>
+    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+    <div class="price-section">
+      <div class="left-price">
+        <p class="price">$125.00</p>
+        <p class="discount">50%</p>
+      </div>
+      <div class="right-price">
+        <p class="original-price">$250.00</p>
+      </div>
+    </div>
+    <div class="quantity">
+      <button class="decrease" onclick="decreaseQuantity()"><img src="./images/icon-minus.svg" alt=""></button>
+      <p class="amount">0</p>
+      <button class="increase" onclick="increaseQuantity()"><img src="./images/icon-plus.svg" alt=""></button>
+    </div>
+    <button class="add-to-cart" onclick="addToCart()">
+      <img src="./images/icon-cart.svg" alt="Cart" class="cart-icon">
+      Add to cart</button>
+  </main>
+
+</body>
+</html>
