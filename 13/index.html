@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Multi-step form</title>
-
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main class="Form">
@@ -45,23 +43,27 @@
       </div>
     </section>
 
-    <section class="stp step-1">
-      <header>
-        <h1 class="title">Personal info</h1>
-        <p class="description">Please provide your name, email address, and phone number.</p>
-      </header>
-      <form >
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="e.g. Stephen King" required>
+    <section class="stp step-1 shown">
+      <div class="top">
+        <header>
+          <h1 class="title">Personal info</h1>
+          <p class="description">Please provide your name, email address, and phone number.</p>
+        </header>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="e.g. Stephen King" required>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="e.g. stephenking@lorem.com" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="e.g. stephenking@lorem.com" required>
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" placeholder="e.g. +1 234 567 890" required>
-
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="e.g. +1 234 567 890" required>
+        </form>
+      </div>
+      <div class="bottom">
         <button type="submit">Next Step</button>
-      </form>
+      </div>
+      
     </section>
 
     <section class="stp step-2 hidden">
@@ -112,7 +114,7 @@
       </form>
     </section>
 
-    <section class="stp step-3">
+    <section class="stp step-3 hidden">
       <header>
         <h1 class="title">Add-ons</h1>
         <p class="description">Select any add-ons you would like to include.</p>
