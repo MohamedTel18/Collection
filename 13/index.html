@@ -43,7 +43,7 @@
       </div>
     </section>
 
-    <section class="stp step-1 shown">
+    <section class="stp step-1 hidden">
       <div class="top">
         <header>
           <h1 class="title">Personal info</h1>
@@ -67,116 +67,133 @@
     </section>
 
     <section class="stp step-2 hidden">
-      <header>
-        <h1 class="title">Select your plan</h1>
-        <p class="description">You have the option of monthly or yearly billing.</p>
-      </header>
-      <form >
-        <div class="plans">
-          <div class="plan">
-            <img src="./assets/images/icon-arcade.svg" alt="Arcade icon">
-            <div class="plan-info">
-              <b>Arcade</b>
-              <span class="plan-price">$9/mo</span>
+      <div class="top">
+        <header>
+          <h1 class="title">Select your plan</h1>
+          <p class="description">You have the option of monthly or yearly billing.</p>
+        </header>
+        <form >
+          <div class="plans">
+            <div class="plan">
+              <img src="./assets/images/icon-arcade.svg" alt="Arcade icon">
+              <div class="plan-info">
+                <b>Arcade</b>
+                <span class="plan-price">$9/mo</span>
+              </div>
+            </div>
+            <div class="plan">
+              <img src="./assets/images/icon-advanced.svg" alt="Advanced icon">
+              <div class="plan-info">
+                <b>Advanced</b>
+                <span class="plan-price">$12/mo</span>
+              </div>
+            </div>
+            <div class="plan">
+              <img src="./assets/images/icon-pro.svg" alt="Pro icon">
+              <div class="plan-info">
+                <b>Pro</b>
+                <span class="plan-price">$15/mo</span>
+              </div>
             </div>
           </div>
 
-          <div class="plan">
-            <img src="./assets/images/icon-advanced.svg" alt="Advanced icon">
-            <div class="plan-info">
-              <b>Advanced</b>
-              <span class="plan-price">$12/mo</span>
-            </div>
+          <div class="switcher">
+            <p class="monthly sw-active">Monthly</p>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <p class="yearly">Yearly</p>
           </div>
-
-          <div class="plan">
-            <img src="./assets/images/icon-pro.svg" alt="Pro icon">
-            <div class="plan-info">
-              <b>Pro</b>
-              <span class="plan-price">$15/mo</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="switcher">
-          <p class="monthly sw-active">Monthly</p>
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>
-          <p class="yearly">Yearly</p>
-        </div>
-
-        <div class="buttons">
-          <button type="button" class="prev">Go Back</button>
-          <button type="submit">Next Step</button>
-        </div>
-      </form>
+        </form>
+      </div>
+      <div class="buttons">
+        <button type="button" class="prev">Go Back</button>
+        <button type="submit" class="next">Next Step</button>
+      </div>
     </section>
 
     <section class="stp step-3 hidden">
-      <header>
-        <h1 class="title">Add-ons</h1>
-        <p class="description">Select any add-ons you would like to include.</p>
-      </header>
-      <form>
-        <div class="add-ons">
-          <label>
-            <input type="checkbox" />
-            Larger storage
-            <span class="price">+$1/mo</span>
-          </label>
-          <label>
-            <input type="checkbox" />
-            Extra 1TB of cloud save
-            <span class="price">+$2/mo</span>
-          </label>
-          <label>
-            <input type="checkbox" />
-            Custom theme on your profile
-            <span class="price">+$2/mo</span>
-          </label>
-        </div>
+      <div class="top">
+        <header>
+          <h1 class="title">Add-ons</h1>
+          <p class="description">Select any add-ons you would like to include.</p>
+        </header>
+        <form>
+          <div class="add-ons">
+            <label>
+              <input type="checkbox" />
+              <div class="text-choise">
+                <p>Online Service</p>
+                <span>Access To multiple</span>
+              </div>
+              <span class="price">+$1/mo</span>
+            </label>
+            <label>
+              <input type="checkbox" />
+              <div class="text-choise">
+                <p>Larger storage</p>
+                <span>Extra 1TB of cloud save</span>
+              </div>
+              <span class="price">+$1/mo</span>
+            </label>
+            <label>
+              <input type="checkbox" />
+              <div class="text-choise">
+                <p>Customizable Profile</p>
+                <span>Custom theme on your profile</span>
+              </div>
+              <span class="price">+$2/mo</span>
+            </label>
+          </div>
+        </form>
+      </div>
 
-        <div class="buttons">
-          <button type="button" class="prev">Go Back</button>
-          <button type="submit">Next Step</button>
-        </div>
-      </form>
+      <div class="buttons">
+        <button type="button" class="prev">Go Back</button>
+        <button type="submit" class="next">Next Step</button>
+      </div>
     </section>
 
     <section class="stp step-4 hidden">
-      <header>
-        <h1 class="title">Summary</h1>
-        <p class="description">Please confirm your choices.</p>
-      </header>
-      <div class="selection-box">
-        <div class="selection-container">
-          <div class="selected-plan">
-            <p class="plan-name">Arcade(Monthly)</p>
-            <p class="plan-price">$9/mo</p>
+      <div class="top">
+        <header>
+          <h1 class="title">Summary</h1>
+          <p class="description">Please confirm your choices.</p>
+        </header>
+      
+        <div class="selection-box">
+          <div class="selection-container">
+            <div class="selected-plan">
+              <p class="plan-name">Arcade(Monthly)</p>
+              <p class="plan-price">$9/mo</p>
+            </div>
+            <a href="">Change</a>
+            <hr />
+            <div class="addons">
+                <div class="selected-addon">
+                  <span class="service-name">Online service</span>
+                  <span class="service-price">+$1/mo</span>
+                </div>
+                <div class="selected-addon">
+                  <span class="service-name">Customizable Profile</span>
+                  <span class="service-price">+$2/mo</span>
+                </div>
+            </div>
           </div>
-          <hr />
-          <div class="addons">
-            <template>
-              <div class="selected-addon">
-                <span class="service-name">Online serivice</span>
-                <span class="servic-price">+$1/mo</span>
-              </div>
-            </template>
-          </div>
+          <p class="total">Total (per month) <b>+$12/mo</b></p>
         </div>
-        <p class="total">Total (per month) <b>+$12/mo</b></p>
       </div>
-      <div class="btns">
-        <button class="prev-stp" type="button">Go Back</button>
-        <button class="next-stp" type="submit">Next Step</button>
+
+      <div class="buttons">
+        <button type="button" class="prev">Go Back</button>
+        <button type="submit" class="next">Next Step</button>
       </div>
     </section>
 
-    <section class="stp step-5 hidden">
-      <div class="thank-you">
-        <img src="./assets/images/icon-thank-you.svg" alt="Thank you icon">
+    <section class="stp step-5 shown">
+      <div class="top">
+        <img src="./assets/images/icon-thank-you.svg" alt="Thank you icon" class="tnx">
         <h1 class="title">Thank you!</h1>
         <p class="description">
           Thanks for confirming your subscription! We hope you have fun 
