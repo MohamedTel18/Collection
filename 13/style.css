@@ -408,3 +408,83 @@ a:hover{
     color: hsl(243, 100%, 62%);
     background-color: white;
 }
+
+.plan-info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .Form{
+        display: grid;
+        grid-template-columns: 300px auto;
+        grid-template-rows: auto;
+        max-width: 720px;
+        margin: 40px auto;
+        height: auto;
+        padding: 15px;
+        background-color: white;
+    }
+    
+    .side-bar {
+        background: url("./assets/images/bg-sidebar-desktop.svg");
+        background-size: cover;
+        height: 100%;
+        width: auto;
+        padding: 40px;
+        align-items: flex-start;
+        gap: 30px;
+        border-radius: 8px;
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    stp{
+        grid-column: 2;
+    }
+
+    .top{
+        position: static;
+        padding: 40px;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    .bottom{
+        position: static;
+        margin-top: auto;
+        padding: 20px 0 0 0;
+        background-color: transparent;
+        justify-content: flex-end;
+        background-color: white;
+    }
+
+    .buttons{
+        position: static;
+        background-color: transparent;
+        padding: 20px 0 0 0;
+        justify-content: flex-end;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .step{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .step-content{
+        display: flex;
+        color: white;
+        flex-direction: column;
+    }
+
+}

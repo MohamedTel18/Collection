@@ -34,7 +34,13 @@ const addonPrices = {
 // Navigation buttons
 nextButtons.forEach(button => {
   button.addEventListener("click", () => {
-    // If moving from plan selection page to add-ons page, make sure a plan is selected
+    
+    if(currentStep === 0)
+    {
+        if(!StepOneValidation())
+            return;
+    }
+
     if (currentStep === 1 && !selectedPlan) {
       alert("Please select a plan before continuing");
       return;
@@ -200,3 +206,16 @@ addonCheckboxes.forEach(checkbox => {
 // Run initial setup
 updatePricesBasedOnBilling();
 
+function StepOneValidation()
+{
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    if(name === "" || email === "" || phone === "")
+    {
+        alert("Please fill all the fields");
+        return false;
+    }
+
+    return true;
+}
