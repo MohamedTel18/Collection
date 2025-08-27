@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Multi-step form</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <main class="Form">
@@ -43,7 +44,7 @@
       </div>
     </section>
 
-    <section class="stp step-1 hidden">
+    <section class="stp step-1 shown">
       <div class="top">
         <header>
           <h1 class="title">Personal info</h1>
@@ -61,7 +62,7 @@
         </form>
       </div>
       <div class="bottom">
-        <button type="submit">Next Step</button>
+        <button type="submit" id="1" class="next">Next Step</button>
       </div>
       
     </section>
@@ -74,21 +75,21 @@
         </header>
         <form >
           <div class="plans">
-            <div class="plan">
+            <div class="plan" data-plan="Arcade">
               <img src="./assets/images/icon-arcade.svg" alt="Arcade icon">
               <div class="plan-info">
                 <b>Arcade</b>
                 <span class="plan-price">$9/mo</span>
               </div>
             </div>
-            <div class="plan">
+            <div class="plan" data-plan="Advanced">
               <img src="./assets/images/icon-advanced.svg" alt="Advanced icon">
               <div class="plan-info">
                 <b>Advanced</b>
                 <span class="plan-price">$12/mo</span>
               </div>
             </div>
-            <div class="plan">
+            <div class="plan" data-plan="Pro">
               <img src="./assets/images/icon-pro.svg" alt="Pro icon">
               <div class="plan-info">
                 <b>Pro</b>
@@ -108,8 +109,8 @@
         </form>
       </div>
       <div class="buttons">
-        <button type="button" class="prev">Go Back</button>
-        <button type="submit" class="next">Next Step</button>
+        <button type="button" class="prev" id="2">Go Back</button>
+        <button type="button" class="next" id="2">Next Step</button>
       </div>
     </section>
 
@@ -150,8 +151,8 @@
       </div>
 
       <div class="buttons">
-        <button type="button" class="prev">Go Back</button>
-        <button type="submit" class="next">Next Step</button>
+        <button type="button" class="prev" id="3">Go Back</button>
+        <button type="button" class="next" id="3">Next Step</button>
       </div>
     </section>
 
@@ -186,12 +187,12 @@
       </div>
 
       <div class="buttons">
-        <button type="button" class="prev">Go Back</button>
-        <button type="submit" class="next">Next Step</button>
+        <button type="button" class="prev" id="4">Go Back</button>
+        <button type="button" class="next" id="4">Next Step</button>
       </div>
     </section>
 
-    <section class="stp step-5 shown">
+    <section class="stp step-5 hidden">
       <div class="top">
         <img src="./assets/images/icon-thank-you.svg" alt="Thank you icon" class="tnx">
         <h1 class="title">Thank you!</h1>
