@@ -1,0 +1,49 @@
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 100px auto;
+}
+
+.about-left{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.about-right{
+    flex-basis: 56%;
+}
+
+.about-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.play-icon{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+h3{
+    font-weight: 600;
+    font-weight: 16px;
+    color: #212ea0;
+}
+
+h2{
+    font-size: 35px;
+    max-width: 400px;
+    margin: 10px 0;
+    color: #000f38;
+}
+
+p{
+    margin-bottom: 15px;
+    color: #676767;
+}
