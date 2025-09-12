@@ -44,3 +44,30 @@ button img{
     margin-left: 10px;
     width: 20px;
 }
+
+@media (max-width: 840px){
+    .Hero-text h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 650px){
+    .Hero-text h1{
+        font-size: 30px;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .Hero-text p{
+        font-size: 14px;
+    }
+
+    .Hero-button{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    button img{
+        width: 16px;
+    }
+}

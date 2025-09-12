@@ -43,3 +43,15 @@
     padding-top: 0;
     transition: all 0.3s ease-in-out;
 }
+
+@media (max-width: 840px) {
+    .Programs{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .program{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}

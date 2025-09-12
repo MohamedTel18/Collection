@@ -35,3 +35,56 @@ li{
     background-color: #212ea0;
     transition: 0.5s;
 }
+
+.menue{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    nav img{
+        width: 150px;
+    }
+    nav li{
+        margin: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 840px) {
+    nav{
+        padding: 15px 0;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #212ea0;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+        bottom: 0;
+        display: none;
+        z-index: -1;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+    }
+
+    .li-btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .menue{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .active{
+        display: block;
+    }
+}

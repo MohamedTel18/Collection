@@ -79,3 +79,17 @@ span {
     border-radius: 30px;
     margin: 10px 0 0;
 }
+
+@media (max-width: 680px) {
+    .Contact {
+        flex-direction: column;
+        gap: 50px;
+        max-width: 95%;
+    }
+
+    .contact-col{
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+}
