@@ -1,12 +1,55 @@
-# React + Vite
+# Edusity - Educational Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive educational website built with React and Vite. This project showcases a university/educational institution website with multiple components including a Hero section, Programs overview, About section, Campus gallery, Testimonials, and Contact form.
 
-Currently, two official plugins are available:
+## Live Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Live Demo:** [https://14-gkwzvxlzo-mohamedtel18s-projects.vercel.app/](https://14-gkwzvxlzo-mohamedtel18s-projects.vercel.app/)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive design for all device sizes
+- Smooth scrolling navigation
+- Interactive program cards
+- Testimonial slider
+- Contact form with validation
+- Modern UI with attractive design elements
+
+## Technologies Used
+
+- React
+- Vite
+- CSS3
+- react-scroll for smooth navigation
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Navigate to the project directory
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+
+## Project Structure
+
+The project is organized into components:
+- NavBar: Navigation with smooth scrolling
+- Hero: Main landing section
+- Programs: Educational programs offered
+- About: Information about the institution
+- Campus: Photo gallery of the campus
+- Testimonials: Student testimonials with slider
+- Contact: Contact form and information
+- Footer: Site footer with additional links
