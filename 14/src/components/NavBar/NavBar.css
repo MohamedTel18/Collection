@@ -23,7 +23,7 @@ li{
     font-size: 16px;
 }
 
-li:last-child{
+.li-btn{
     background-color: white;
     color: #333;
     padding: 14px 25px;

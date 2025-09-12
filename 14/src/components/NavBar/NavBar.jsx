@@ -26,7 +26,7 @@ const NavBar = () => {
             <li>About US</li>
             <li>Campus</li>
             <li>Testimonials</li>
-            <li>Contact US</li>
+            <li className='li-btn'>Contact US</li>
         </ul>
     </nav>
   )

@@ -30,20 +30,20 @@
     cursor: pointer;
 }
 
-h3{
+.about-right h3{
     font-weight: 600;
     font-weight: 16px;
     color: #212ea0;
 }
 
-h2{
+.about-right h2{
     font-size: 35px;
     max-width: 400px;
     margin: 10px 0;
     color: #000f38;
 }
 
-p{
+.about-right p{
     margin-bottom: 15px;
     color: #676767;
 }
