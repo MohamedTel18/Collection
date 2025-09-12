@@ -4,7 +4,7 @@ A modern, responsive educational website built with React and Vite. This project
 
 ## Live Preview
 
-**Live Demo:** [https://14-gkwzvxlzo-mohamedtel18s-projects.vercel.app/](https://14-gkwzvxlzo-mohamedtel18s-projects.vercel.app/)
+**Live Demo:** [Vercel App](https://14-ten-sooty.vercel.app/)
 
 ## Features
 
