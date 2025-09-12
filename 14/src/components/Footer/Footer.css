@@ -1,0 +1,19 @@
+.footer {
+    background-color: #f1f1f1;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    border-top: 1px solid #656565;
+}
+
+.footer li{
+    margin: 0;
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
